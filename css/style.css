@@ -1,0 +1,165 @@
+html {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "SF-Pro-Display";
+    src: url("../fonts/SF-Pro-Display-Regular.woff2") format("woff2"),
+        url("../fonts/SF-Pro-Display-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF-Pro-Display";
+    src: url("../fonts/SF-Pro-Display-Bold.woff2") format("woff2"),
+        url("../fonts/SF-Pro-Display-Bold.woff") format("woff");
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "spaceagecyrillic";
+    src: url("../fonts/spaceagecyrillic-regular.woff2") format("woff2"),
+        url("../fonts/spaceagecyrillic-regular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+}
+
+body {
+    font-family: "SF-Pro-Display";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    background-color: black;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    background-image: url(../images/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+.menu__list {
+    display: flex;
+}
+.menu__item + .menu__item {
+    margin-left: 30px;
+}
+.menu__link {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 21px;
+    transition: color 0.3s ease;
+}
+.menu__link:hover,
+.header__phone:hover {
+    color: #cb0e0e;
+}
+.header__phone {
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: auto;
+    transition: color 0.3s ease;
+}
+.login {
+    margin-right: 134px;
+    margin-left: 22px;
+    transition: scale 0.3s;
+}
+.login:hover {
+    scale: 1.2;
+}
+.header__content {
+    max-width: 50%;
+}
+.header__title {
+    font-family: "spaceagecyrillic";
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+}
+.header__title span {
+    font-size: 110px;
+}
+.header__text {
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.header__btn {
+    display: block;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-size: 23px;
+    line-height: 29px;
+    padding: 16px 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.header__btn:hover {
+    border: 1px solid #cb0e0e;
+    color: #cb0e0e;
+    scale: 1.1;
+}
+.header__description {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5%;
+    margin-top: 40px;
+}
+.header__description-text {
+    width: 165px;
+    font-size: 14px;
+    line-height: 17px;
+}
+.header__description-text + .header__description-text {
+    margin-left: 50px;
+}
