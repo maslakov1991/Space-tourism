@@ -333,7 +333,7 @@ foreignObject {
     background-image: url(../images/info-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center;
     padding-bottom: 100px;
 }
 .offer__inner {
@@ -430,14 +430,14 @@ foreignObject {
 .services__buttons {
     width: 500px;
 }
-.services__btn{
+.services__btn {
     width: 100%;
 }
-.services__btn--first{
+.services__btn--first {
     margin-bottom: 50px;
     position: relative;
 }
-.services__btn--first:before{
+.services__btn--first:before {
     content: "";
     position: absolute;
     background-image: url(../images/spaceman.png);
@@ -445,4 +445,97 @@ foreignObject {
     bottom: 39px;
     width: 192px;
     height: 150px;
+}
+
+/* SLIDER */
+
+.slider {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.slider__inner {
+    margin-bottom: 50px;
+    border: 1px solid #fff;
+    padding: 100px 0;
+}
+.slider__box-img {
+    margin: 0 auto;
+}
+.slider__quote {
+    font-family: "spaceagecyrillic";
+    font-size: 24px;
+    line-height: 30px;
+}
+.slider__box {
+    position: relative;
+}
+.slick-prev,
+.slick-next {
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.slick-prev {
+    left: 75px;
+}
+.slick-next {
+    right: 75px;
+}
+
+/* CONTACTS */
+
+.contacts {
+    background-color: #010203;
+    padding-bottom: 100px;
+}
+.contacts__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts__box {
+    width: 500px;
+}
+.contacts__title {
+    padding-bottom: 46px;
+}
+.contacts__box-text {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 80px;
+}
+.contacts__form-input {
+    background-color: #010203;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: "SF-Pro-Display";
+    font-size: 14px;
+    line-height: 17px;
+    padding: 20px 0;
+    width: 100%;
+}
+.contacts__form-input::placeholder {
+    color: #fff;
+    font-family: "SF-Pro-Display";
+    font-size: 14px;
+    line-height: 17px;
+}
+.contacts__btn {
+    margin-top: 70px;
+    width: 100%;
+}
+.contacts__guarantees {
+    width: 600px;
+}
+.contacts__guarantees-text {
+    font-size: 24px;
+    line-height: 29px;
+}
+.contacts__guarantees-img {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
 }
