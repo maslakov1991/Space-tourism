@@ -539,3 +539,46 @@ foreignObject {
     justify-content: flex-end;
     margin-left: auto;
 }
+
+/* FOOTER */
+
+.footer {
+    background-image: url(../images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.footer__inner {
+    display: flex;
+    justify-content: flex-end;
+}
+.footer__text {
+    width: 165px;
+    margin-right: 50px;
+}
+.footer__text p + p {
+    margin-top: 50px;
+}
+.footer__menu {
+    width: 120px;
+    margin-right: 95px;
+}
+.footer__menu-link,
+.footer__contacts-link {
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+.footer__menu-item + .footer__menu-item,
+.footer__contacts-item + .footer__contacts-item {
+    margin-top: 22px;
+}
+.footer__contacts {
+    width: 165px;
+}
+.footer__contacts-link:hover,
+.footer__menu-link:hover {
+    color: #cb0e0e;
+}
+
